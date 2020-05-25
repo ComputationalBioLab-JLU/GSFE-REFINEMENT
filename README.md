@@ -1,93 +1,31 @@
 # GSFE-REFINEMENT
-protein refinement by generalized solvation free energy theory 
-
-# Title
-
-![banner]()
-
-![badge]()
-![badge]()
-[![license](https://img.shields.io/github/license/:user/:repo.svg)](LICENSE)
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-
-This is an example file with maximal choices selected.
-
-This is a long description.
-
 ## Table of Contents
 
-- [Security](#security)
 - [Background](#background)
-- [Install](#install)
 - [Usage](#usage)
-- [API](#api)
-- [Contributing](#contributing)
-- [License](#license)
+- [Maintainers](#Maintainers)
 
-## Security
-
-### Any optional sections
 
 ## Background
-
-### Any optional sections
-
-## Install
-
-This module depends upon a knowledge of [Markdown]().
-
-```
-```
-
-### Any optional sections
+protein refinement by generalized solvation free energy theory
 
 ## Usage
+The code need python3.7, biopython (1.74), numpy (1.17.2), torch (1.2.0) and Java(openjdk version "1.8.0_191")
 
-```
-```
+you can run the code by "python3 auto_opi_mutation_model770_sincos.py --PATH native_start --native_name 101m__native.pdb --decoy_name 101m__model.pdb --device cpu --L1_smooth_parameter 1.2 --ENRAOPY_W 1"
+"--PATH" is the path of native structure and decoys.
 
-Note: The `license` badge image link at the top of this file should be updated with the correct `:user` and `:repo`.
+"--native_name" is the parameter of native structure name,
 
-### Any optional sections
+"--decoy_name" is the parameter decoy name need to be refined, 
 
-## API
+"--device" is the parameter of using cpu or gpu,
 
-### Any optional sections
+"--L1_smooth_parameter loss" is the parameter of L1_smooth item,
 
-## More optional sections
-
-## Contributing
-
-See [the contributing file](CONTRIBUTING.md)!
-
-PRs accepted.
-
-Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
-
-### Any optional sections
-
-## License
-
-[MIT © Richard McRichface.](../LICENSE)
+"--entropy_w"  is the parameter of entropy weight.
 
 
+## Maintainers
 
-需要安装的软件和版本，python3,  biopython (1.74)，numpy (1.17.2)，torch (1.2.0)，
-
-另外需要安装Java(openjdk version "1.8.0_191")
-
-
-
-如何跑程序："python3 auto_opi_mutation_model770_sincos.py --PATH native_start --native_name 101m__native.pdb --decoy_name 101m__model.pdb --device cpu --L1_smooth_parameter 1.2 --ENRAOPY_W 1"
-
-命令行可选参数参数: --PATH 需要优化的start model 和 native structure 的路径
-
-		  --native_name native structure 文件名字，
-
- 		--decoy_name 需要refinement的decoy文件， 
-
-		--device 使用cpu或者是gpu，
-
-		--L1_smooth_parameter loss——sml1参数，
-
-		--entropy_w 是否使用熵权重
+[@15526876318](https://github.com/15526876318).
